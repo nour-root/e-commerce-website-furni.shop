@@ -1,0 +1,54 @@
+{
+    "products": [
+        {
+            "name": "Stackable Chair<",
+            "price": "87.00",
+            "image": "/assets/product-1.png"
+        },
+        {
+            "name": "Lamp Tool",
+            "price": "35.00",
+            "image": "/assets/product-2.png"
+        },
+        {
+            "name": "Dining Chair",
+            "price": "55.00",
+            "image": "/assets/product-3.png"
+        },
+        {
+            "name": "Hand Base Lamp",
+            "price": "35.00",
+            "image": "/assets/product-4.png"
+        },
+        {
+            "name": "Stylish Chair",
+            "price": "45.00",
+            "image": "/assets/product-5.png"
+        },
+        {
+            "name": "Vintage Chair",
+            "price": "65.00",
+            "image": "/assets/product-6.png"
+        }
+    ],
+    "users": [
+        {
+            "name": "David Miller",
+            "job": "Real Estate Agent",
+            "description": "Furni.shop transformed my living space with their beautifuland affordable furniture. The 5% cashback was a delightful bonus!",
+            "image": "/assets/user-1.jpg"
+        },
+        {
+            "name": "Sarah Thompson",
+            "job": "Interior Designer",
+            "description": "Exceptional quality and service! The furniture is stunning, and the 30-day payment terms made it incredibly convenient.",
+            "image": "/assets/user-2.jpg"
+        },
+        {
+            "name": "Michael Lee",
+            "job": "Entrepreneur",
+            "description": "The 30-day terms made it easy for us to furnish our new home without financial stress. Highly recommended!",
+            "image": "/assets/user-3.jpg"
+        }
+    ]
+}

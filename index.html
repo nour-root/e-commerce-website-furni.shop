@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="./src/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Web Design | furni.shop</title>
+</head>
+
+<body class="text-white">
+  <nav class="fixed isolate w-full max-w-[1200px] m-auto z-10 sm:hidden">
+    <div class="nav_header relative w-full flex items-center justify-between bg-primray-color">
+      <div class="nav_logo">
+        <a href="" class="logo text-2xl text-white font-merriweather">furni.shop</a>
+      </div>
+      <div class="text-2xl text-white hover:cursor-pointer" id="menu-btn">
+        <svg height="20" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.75 4.75h18.5M2.75 12h18.5m-18.5 7.25h18.5" fill="none" stroke="currentColor" strokeLinecap="round"
+            strokeLinejoin="round" strokeWidth="1.5" />
+        </svg>
+      </div>
+    </div>
+    <ul id="nav-links"
+      class="absolute top-8 left-0 w-full flex items-center justify-center flex-col gap-8 bg-primray-color -z-10 transition-transform duration-200">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#product">Product</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <div class="max-sm:hidden" id="nav-search">
+      <input type="text" placeholder="Search" />
+      <span>
+        <svg height="20" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 19a9 9 0 1 0 0-18a9 9 0 0 0 0 18m0-2.118a6.882 6.882 0 1 1 0-13.764a6.882 6.882 0 0 1 0 13.764M15.896 19l2.426 4h2.34l-2.427-4z"
+            fill="currentColor" fillRule="evenodd" />
+        </svg>
+      </span>
+    </div>
+  </nav>
+  <!-- nav large screen -->
+  <nav class="fixed isolate w-full m-auto z-10 text-dark-color max-sm:hidden bg-white">
+    <div class="nav_header w-full flex items-center justify-between gap-8">
+      <div class="nav_logo">
+        <a href="" class="logo text-2xl font-merriweather text-primray-color">furni.shop</a>
+      </div>
+      <ul id="nav-links" class="flex w-full items-center justify-end gap-30">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <div class="flex items-center gap-3 flex-row-reverse flex-1/2 grow" id="nav-search-2">
+        <span class="cursor-pointer block">
+          <svg height="20" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 19a9 9 0 1 0 0-18a9 9 0 0 0 0 18m0-2.118a6.882 6.882 0 1 1 0-13.764a6.882 6.882 0 0 1 0 13.764M15.896 19l2.426 4h2.34l-2.427-4z"
+              fill="currentColor" fillRule="evenodd" />
+          </svg>
+        </span>
+        <input type="text"
+          class="outline-0 border-0 w-0 text-xl text-light border-b-1 border-light transition-all duration-300"
+          placeholder="Search" />
+      </div>
+    </div>
+  </nav>
+  <!-- header section -->
+  <header class="grid overflow-hidden mb-8 max-w-[1200px] m-auto py-20 px-8 text-primray-color" id="home">
+    <div class="" id="image-header">
+      <img src="/assets/header.jpg" class="ml-auto min-w-[456px]" alt="" />
+    </div>
+    <div id="header-content" class="text-dark-color flex items-center">
+      <div class="py-16 px-8 bg-[rgba(255,255,255,.5)] backdrop-blur-xs space-y-8 max-w-[500px]">
+        <h1 class="text-6xl font-bold font-merriweather text-primray-color capitalize leading-20">
+          we help you make modren interior
+        </h1>
+        <p class="text-xl text-light tracking-wide">
+          we will help you an elegant and luxurio interior designed by profe
+          ssional interior designer
+        </p>
+      </div>
+    </div>
+  </header>
+  <section class="py-20 px-4 text-dark-color max-sm:space-y-5 sm:grid sm:grid-cols-3 sm:gap-5  lg:gap-10">
+    <div id="deal-card" class="max-sm:col-span-2 md:col-span-4 space-y-3 col-[unset]">
+      <h2 id="section-header" class="text-4xl font-merriweather text-primray-color ">
+        Hot 🔥 deals for you
+      </h2>
+      <p class="capitalize text-light">online shopping for retail direct to consumers</p>
+    </div>
+    <div id="deal-card" class="space-y-2">
+      <span class="block"><img src="/assets/icons/credit-card.svg" width="25" alt="" /></span>
+      <h4 class="font-semibold text-lg">1.5% cashback</h4>
+      <p class="text-light">Earn a 5% cashback reward on every furniture purchase you make!</p>
+    </div>
+    <div id="deal-card" class="space-y-2">
+      <span class="block"><img src="/assets/icons/calendar-clock.svg" width="25" alt=""></i></span>
+      <h4 class="font-semibold text-lg">30 day terms</h4>
+      <p class="text-light">
+        Take advantage of our 30-day payment terms, completely
+        interest-free!
+      </p>
+    </div>
+    <div id="deal-card" class="space-y-2">
+      <span class="flex items-center justify-center w-fit p-1 border-2 border-dark-color rounded-full"><img
+          src="/assets/icons/indian-rupee-sign.svg" width="20" alt=""></span>
+      <h4 class="font-semibold text-lg">Save money</h4>
+      <p class="text-light">
+        Discover unbeatable prices and save big money on top-quality
+        furniture!
+      </p>
+    </div>
+
+  </section>
+  <section id="about" class="py-20 px-4 text-dark-color space-y-12">
+    <div id="about-header" class="flex flex-col gap-8 sm:flex-row items-center justify-between ">
+      <div class="space-y-3">
+        <h2 class="text-4xl capitalize font-merriweather font-bold text-primray-color">About us</h2>
+        <p id="about-description" class="text-light max-w-[600px]">Our passion for exceptional craftsmanship drives us
+          to curate the
+          best pieces for every room in your house.</p>
+      </div>
+      <button id="btn-about"
+        class="capitalize py-3 px-6 w-fit rounded-md transition duration-300 cursor-pointer border-0 outline-0 bg-primray-color text-white">learn
+        more</button>
+    </div>
+    <div id="about-content" class="grid gap-8 grid-cols-2 items-center">
+      <div id="about-img" class="overflow-hidden row-start-1 col-start-2 row-end-2 col-end-3">
+        <img src="/assets/about.png" alt="about">
+      </div>
+      <div id="about-grid" class="grid gap-12 sm:grid-cols-2 md:gap-16">
+        <div id="about-card">
+          <h3 class="font-bold text-2xl text-primray-color">1.</h3>
+          <h4 class="font-semibold">Who We Are</h4>
+          <p class="text-light">You get a 2-week free trail to kick the Smaert tries. We want you
+            to.</p>
+        </div>
+        <div id="about-card">
+          <h3 class="font-bold text-2xl text-primray-color">2.</h3>
+          <h4 class="font-semibold">What do we do</h4>
+          <p class="text-light">
+            We give you a free course that guides you through the process.
+          </p>
+        </div>
+        <div id="about-card">
+          <h3 class="font-bold text-2xl text-primray-color">3.</h3>
+          <h4 class="font-semibold">How do we help</h4>
+          <p class="text-light">Use our multimedis lectures, videos, and coaching sessions.</p>
+        </div>
+        <div id="about-card">
+          <h3 class="font-bold text-2xl text-primray-color">4.</h3>
+          <h4 class="font-semibold">Create success story</h4>
+          <p class="text-light">
+            With access to online learning resources anyone can transform.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-dark-color py-20 px-8 space-y-16" id="product">
+    <h2 class="text-primray-color font-merriweather font-bold text-4xl">Products</h2>
+    <div class="space-y-6 grid sm:grid-cols-2 sm:gap-12 md:grid-cols-3 md:gap-16" id="product-grid">
+      <!-- products -->
+    </div>
+  </section>
+  <section id="client-container" class="text-dark-color">
+    <div id="client-content" class="py-20 px-4 rounded-2xl bg-extra-light text-center space-y-6">
+      <h2 id="header-section" class="text-primray-color text-6xl font-merriweather mx-auto">What our happy client say
+      </h2>
+      <p class="mx-auto text-light">Testimonials Highlighting Our Commitment to Quality, Exceptional
+        Service, and Customer Satisfaction
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper mt-16 w-full">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="contact" class="text-dark-color bg-primray-color">
+    <div class="m-auto py-20 px-4 max-w-[1200px] grid gap-x-16 gap-y-8 sm:grid-cols-2 md:grid-cols-4 md:gap-x-12">
+      <div id="footer-col" class="space-y-8">
+        <div id="footer-logo">
+          <a href="#" id="logo" class="font-bold text-3xl text-white font-merriweather">furni.shop</a>
+        </div>
+        <p class="text-extra-light opacity-80">
+          Join us in transforming your living spaces with furniture that
+          blends elegance and practicality seamlessly.
+        </p>
+        <ul id="footer-socials" class="flex items-center gap-4 text-white text-2xl *:hover:opacity-50">
+          <li><a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z">
+                </path>
+              </svg>
+            </a></li>
+          <li><a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z">
+                </path>
+              </svg>
+            </a></li>
+          <li><a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z">
+                </path>
+              </svg>
+            </a></li>
+          <li><a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M13.3717 2.09442C8.42512 1.41268 3.73383 4.48505 2.38064 9.29256C1.02745 14.1001 3.42711 19.1692 8.00271 21.1689C7.94264 20.4008 7.99735 19.628 8.16502 18.8761C8.34964 18.0374 9.46121 13.4132 9.46121 13.4132C9.23971 12.9173 9.12893 12.379 9.13659 11.8359C9.13659 10.3509 9.99353 9.24295 11.0597 9.24295C11.4472 9.23718 11.8181 9.40028 12.0758 9.68981C12.3335 9.97934 12.4526 10.3667 12.402 10.751C12.402 11.6512 11.8236 13.0131 11.5228 14.2903C11.4014 14.7656 11.5131 15.2703 11.8237 15.65C12.1343 16.0296 12.6069 16.2389 13.0967 16.2139C14.9944 16.2139 16.2675 13.7825 16.2675 10.9126C16.2675 8.71205 14.8098 7.0655 12.1243 7.0655C10.826 7.01531 9.56388 7.4996 8.63223 8.40543C7.70057 9.31126 7.18084 10.5595 7.19423 11.859C7.16563 12.5722 7.39566 13.2717 7.84194 13.8287C8.01361 13.9564 8.07985 14.1825 8.00425 14.3827C7.9581 14.5673 7.84194 15.0059 7.79578 15.1675C7.77632 15.278 7.70559 15.3728 7.60516 15.4228C7.50473 15.4729 7.38651 15.4724 7.28654 15.4214C5.9019 14.8674 5.24957 13.3439 5.24957 11.6051C5.24957 8.75822 7.63424 5.3497 12.4036 5.3497C16.1998 5.3497 18.723 8.1273 18.723 11.0972C18.723 15.0059 16.5468 17.9451 13.3298 17.9451C12.3526 17.9761 11.4273 17.5061 10.8759 16.6986C10.8759 16.6986 10.2974 19.0146 10.1835 19.4531C9.95101 20.2099 9.60779 20.9281 9.16505 21.5844C10.0877 21.8643 11.0471 22.0044 12.0113 22C14.6636 22.0017 17.2078 20.9484 19.0829 19.072C20.958 17.1957 22.0099 14.6504 22.0069 11.9975C22.004 7.00306 18.3183 2.77616 13.3717 2.09442Z">
+                </path>
+              </svg>
+            </a></li>
+        </ul>
+      </div>
+      <div class="space-y-2">
+        <h4 class="font-medium text-xl text-white">Services</h4>
+        <ul class="text-extra-light  grid gap-4 *:hover:opacity-100">
+          <li class="opacity-80"><a href="#">Contact Us</a></li>
+          <li class="opacity-80"><a href="#">Press</a></li>
+          <li class="opacity-80"><a href="#">Payrol</a></li>
+          <li class="opacity-80"><a href="#">Library</a></li>
+          <li class="opacity-80"><a href="#">Blog</a></li>
+          <li class="opacity-80"><a href="#">Help Center</a></li>
+        </ul>
+      </div>
+      <div class="footer__col space-y-2">
+        <h4 class="font-medium text-xl text-white">Resources</h4>
+        <ul class="text-extra-light  grid gap-4 *:hover:opacity-100">
+          <li class="opacity-80"><a href="#">Pricing</a></li>
+          <li class="opacity-80"><a href="#">FAQs</a></li>
+          <li class="opacity-80"><a href="#">Contact Support</a></li>
+          <li class="opacity-80"><a href="#">Privacy Policy</a></li>
+          <li class="opacity-80"><a href="#">Terms</a></li>
+        </ul>
+      </div>
+      <div class="footer__col space-y-2">
+        <h4 class="font-medium text-xl text-white">Support</h4>
+        <ul class="text-extra-light grid gap-4 *:hover:opacity-100">
+          <li class="opacity-80"><a href="#">Contact</a></li>
+          <li class="opacity-80"><a href="#">Affiliates</a></li>
+          <li class="opacity-80"><a href="#">Sitemap</a></li>
+          <li class="opacity-80"><a href="#">Cancelation Policy</a></li>
+          <li class="opacity-80"><a href="#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="p-4 text-[0.9rem] text-extra-light opacity-80 text-center">
+      Copyright © 2024 Web Design Mastery. All rights reserved.
+    </div>
+  </footer>
+  <script type="module" src="./src/main.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
